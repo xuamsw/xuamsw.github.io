@@ -1,11 +1,5 @@
 project:
   type: website
-output-dir: _site
-
-default-output: github
-
-output:
-  html:
 
 website:
   title: "Amy Xu"
@@ -16,11 +10,8 @@ website:
 
 format:
   html:
-    theme:
-      - vapor
-      - brand
+    theme: journal
     css: styles.css
     toc: true
 
 editor: visual
-
