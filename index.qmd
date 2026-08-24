@@ -1,9 +1,44 @@
 ---
-title: "Amy Xu"
+title: "AMY XU, MSW (she/her)"
 ---
+![Amy Xu](Amy1-18.jpg){width=600}
 
-# Amy Xu, MSW (she/her)
+I am a PhD candidate in social work at the Ohio State University and am interested in class, gender, and technology inequalities. My current work focuses on constructing financial stress competence in health and human service work through chatbot simulation as an assessment tool. Some of my recent published work includes:
 
-![Photo by Eslee Visuals](Amy1-18.jpg){width=300}
+Xu, A., Kinitz, D. J., Yanar, B., Senthanar, S., Su, Y., & Haghiri-Vijeh, R. (In press). How precariously employed gay, bisexual, and queer immigrant and refugee men in Toronto make meaning of work, health, and wellbeing. *Scientific Reports*. https://doi.org/10.1038/s41598-026-67672-x
 
-I am interested in the role of technology in class and gender inequalities and particularly how it informs social work. Currently, I am a PhD student in social work at the Ohio State University. My CV is available on request!
+Lee, J. Y., Pace, G. T., Cha, H., Ko, K., Chang, Y., & Xu, A. (Accepted). The most important predictors of father involvement among politically conservative fathers: An explainable artificial intelligence (XAI) approach. *Translational Data Science for Social Impact*. 
+
+In my free time, I like to listen to music, podcasts, and audio. I made some of my own a long time ago:
+
+```{=html}
+<div id="substack-feed" style="max-width: 800px; margin: auto; font-family: system-ui, sans-serif;">
+  <p>Loading latest episodes...</p>
+</div>
+<script>
+  const feedUrl = encodeURIComponent('https://newstyletea.substack.com/feed');
+  const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${feedUrl}`;
+  fetch(apiUrl)
+    .then(res => res.json())
+    .then(data => {
+      const container = document.getElementById('substack-feed');
+      container.innerHTML = '';
+
+      data.items.slice(0, 4).forEach(item => {
+        const postCard = document.createElement('div');
+        postCard.style = "border: 1px solid #e1e1e1; border-radius: 8px; padding: 15px; margin-bottom: 15px; background: #fff;";
+
+        postCard.innerHTML = `
+          <h3 style="margin-top: 0; color: #111;">${item.title}</h3>
+          <p style="color: #666; font-size: 0.9em;">Published: ${new Date(item.pubDate).toLocaleDateString()}</p>
+          <a href="${item.link}" target="_blank" style="display: inline-block; background: #000; color: #fff; padding: 8px 12px; text-decoration: none; border-radius: 4px; font-size: 0.9em;">Listen on Substack</a>
+        `;
+        container.appendChild(postCard);
+      });
+    })
+    .catch(err => {
+      document.getElementById('substack-feed').innerHTML = '<p>Failed to load feed. <a href="https://newstyletea.substack.com" target="_blank">Visit New Style Tea on Substack</a></p>';
+    });
+</script>
+```
+
